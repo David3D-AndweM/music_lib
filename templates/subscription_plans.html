@@ -1,0 +1,26 @@
+<!-- templates/your_app/subscription_plans.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'formStyle.css' %}">
+    <title>Subscription Plans</title>
+</head>
+<body>
+<div class="subscription_plans">
+    <h1>Choose a Subscription Plan</h1>
+    <div class="plans">
+        {% for plan in plans %}
+            <div class="plan">
+                <h2>{{ plan.name }}</h2>
+                <p>{{ plan.description }}</p>
+                <p>${{ plan.price }}</p>
+                <a href="{% url 'create_checkout_session' plan.id %}">Subscribe</a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+</body>
+</html>

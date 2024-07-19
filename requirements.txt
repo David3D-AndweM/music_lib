@@ -1,0 +1,14 @@
+asgiref==3.8.1
+certifi==2024.7.4
+charset-normalizer==3.3.2
+Django==3.0.7
+idna==3.7
+pytz==2024.1
+requests==2.32.3
+six==1.16.0
+spotipy==2.16.1
+sqlparse==0.5.1
+stripe==10.4.0
+typing_extensions==4.12.2
+urllib3==2.2.2
+youtube-search==1.1.1
